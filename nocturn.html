@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>NocTurn</title>
+<link rel="stylesheet" href="nocturn_styles.css">
+</head>
+<body>
+
+<div class="viewport-frame"></div>
+<div class="frame-inner-lip"></div>
+<div class="frame-groove"></div>
+<div class="frame-bead-top"></div>
+<div class="frame-bead-bottom"></div>
+<div class="frame-bead-left"></div>
+<div class="frame-bead-right"></div>
+<!-- Top center cartouche -->
+<div class="frame-scroll frame-scroll-top"><svg viewBox="0 0 300 50" preserveAspectRatio="xMidYMid meet">
+  <path d="M150,44 C150,28 130,18 110,24 C90,30 80,16 85,6" fill="none" stroke="#c8963a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M150,44 C150,28 170,18 190,24 C210,30 220,16 215,6" fill="none" stroke="#c8963a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M85,6 C80,0 72,4 76,10 C80,16 74,20 68,16" fill="none" stroke="#b48c50" stroke-width="2" stroke-linecap="round"/>
+  <path d="M215,6 C220,0 228,4 224,10 C220,16 226,20 232,16" fill="none" stroke="#b48c50" stroke-width="2" stroke-linecap="round"/>
+  <path d="M68,16 C60,12 55,18 62,22" fill="none" stroke="#a07a2e" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M232,16 C240,12 245,18 238,22" fill="none" stroke="#a07a2e" stroke-width="1.5" stroke-linecap="round"/>
+  <ellipse cx="150" cy="44" rx="10" ry="5" fill="rgba(200,150,58,0.25)" stroke="#c8963a" stroke-width="1.5"/>
+  <ellipse cx="150" cy="44" rx="4" ry="2" fill="rgba(255,220,100,0.4)"/>
+  <path d="M110,24 C105,28 100,24 104,18" fill="none" stroke="rgba(180,140,50,0.4)" stroke-width="1.2"/>
+  <path d="M190,24 C195,28 200,24 196,18" fill="none" stroke="rgba(180,140,50,0.4)" stroke-width="1.2"/>
+  <path d="M50,20 C45,28 38,22 44,16 C50,10 56,16 50,20Z" fill="rgba(200,150,58,0.12)" stroke="rgba(180,140,50,0.35)" stroke-width="1"/>
+  <path d="M250,20 C255,28 262,22 256,16 C250,10 244,16 250,20Z" fill="rgba(200,150,58,0.12)" stroke="rgba(180,140,50,0.35)" stroke-width="1"/>
+  <path d="M35,24 Q42,18 50,24" fill="none" stroke="rgba(180,140,50,0.25)" stroke-width="0.8"/>
+  <path d="M265,24 Q258,18 250,24" fill="none" stroke="rgba(180,140,50,0.25)" stroke-width="0.8"/>
+</svg></div>
+<!-- Bottom center cartouche -->
+<div class="frame-scroll frame-scroll-bottom"><svg viewBox="0 0 300 50" preserveAspectRatio="xMidYMid meet">
+  <path d="M150,6 C150,22 130,32 110,26 C90,20 80,34 85,44" fill="none" stroke="#c8963a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M150,6 C150,22 170,32 190,26 C210,20 220,34 215,44" fill="none" stroke="#c8963a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M85,44 C80,50 72,46 76,40 C80,34 74,30 68,34" fill="none" stroke="#b48c50" stroke-width="2" stroke-linecap="round"/>
+  <path d="M215,44 C220,50 228,46 224,40 C220,34 226,30 232,34" fill="none" stroke="#b48c50" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="150" cy="6" rx="10" ry="5" fill="rgba(200,150,58,0.25)" stroke="#c8963a" stroke-width="1.5"/>
+  <ellipse cx="150" cy="6" rx="4" ry="2" fill="rgba(255,220,100,0.4)"/>
+  <path d="M50,30 C45,22 38,28 44,34 C50,40 56,34 50,30Z" fill="rgba(200,150,58,0.12)" stroke="rgba(180,140,50,0.35)" stroke-width="1"/>
+  <path d="M250,30 C255,22 262,28 256,34 C250,40 244,34 250,30Z" fill="rgba(200,150,58,0.12)" stroke="rgba(180,140,50,0.35)" stroke-width="1"/>
+</svg></div>
+<!-- Left center cartouche -->
+<div class="frame-scroll frame-scroll-left"><svg viewBox="0 0 50 260" preserveAspectRatio="xMidYMid meet">
+  <path d="M44,130 C28,130 18,110 24,90 C30,70 16,60 6,65" fill="none" stroke="#c8963a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M44,130 C28,130 18,150 24,170 C30,190 16,200 6,195" fill="none" stroke="#c8963a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M6,65 C0,60 4,52 10,56 C16,60 20,54 16,48" fill="none" stroke="#b48c50" stroke-width="2" stroke-linecap="round"/>
+  <path d="M6,195 C0,200 4,208 10,204 C16,200 20,206 16,212" fill="none" stroke="#b48c50" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="44" cy="130" rx="5" ry="10" fill="rgba(200,150,58,0.25)" stroke="#c8963a" stroke-width="1.5"/>
+  <ellipse cx="44" cy="130" rx="2" ry="4" fill="rgba(255,220,100,0.4)"/>
+</svg></div>
+<!-- Right center cartouche -->
+<div class="frame-scroll frame-scroll-right"><svg viewBox="0 0 50 260" preserveAspectRatio="xMidYMid meet">
+  <path d="M6,130 C22,130 32,110 26,90 C20,70 34,60 44,65" fill="none" stroke="#c8963a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M6,130 C22,130 32,150 26,170 C20,190 34,200 44,195" fill="none" stroke="#c8963a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M44,65 C50,60 46,52 40,56 C34,60 30,54 34,48" fill="none" stroke="#b48c50" stroke-width="2" stroke-linecap="round"/>
+  <path d="M44,195 C50,200 46,208 40,204 C34,200 30,206 34,212" fill="none" stroke="#b48c50" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="6" cy="130" rx="5" ry="10" fill="rgba(200,150,58,0.25)" stroke="#c8963a" stroke-width="1.5"/>
+  <ellipse cx="6" cy="130" rx="2" ry="4" fill="rgba(255,220,100,0.4)"/>
+</svg></div>
+<!-- Ambient particles — diamonds & shooting stars -->
+<div class="ambient-particles" id="ambientParticles"></div>
+<!-- Full-screen crash overlay -->
+<div class="crash-fullscreen" id="crashFullscreen">
+  <div class="crash-cracks" id="crashCracks"></div>
+  <div class="crash-impact"></div>
+  <div class="crash-label">
+    <div class="crash-label-title">CRASH</div>
+    <div class="crash-label-sub">Impact Detected</div>
+  </div>
+</div>
+<!-- Baroque corner ornaments with rosettes & scrollwork -->
+<div class="frame-corner tl"><svg viewBox="0 0 160 160">
+  <!-- Outer L-bracket -->
+  <path d="M2,100 L2,14 Q2,2 14,2 L100,2" fill="none" stroke="#c8963a" stroke-width="6"/>
+  <path d="M6,96 L6,16 Q6,6 16,6 L96,6" fill="none" stroke="#a07a2e" stroke-width="3"/>
+  <!-- Corner block -->
+  <path d="M2,2 L32,2 L32,8 L8,8 L8,32 L2,32Z" fill="rgba(200,150,58,0.3)" stroke="#c8963a" stroke-width="2"/>
+  <!-- Central rosette -->
+  <circle cx="18" cy="18" r="14" fill="rgba(160,122,46,0.25)" stroke="#d4a843" stroke-width="3"/>
+  <circle cx="18" cy="18" r="8" fill="rgba(200,150,58,0.2)" stroke="#c8963a" stroke-width="1.5"/>
+  <circle cx="18" cy="18" r="3.5" fill="rgba(255,210,80,0.5)" stroke="#d4a843" stroke-width="1"/>
+  <circle cx="18" cy="18" r="1.2" fill="rgba(255,235,150,0.8)"/>
+  <!-- Rosette petals -->
+  <path d="M18,4 Q26,10 26,18" fill="none" stroke="#c8963a" stroke-width="1.5"/>
+  <path d="M18,4 Q10,10 10,18" fill="none" stroke="#c8963a" stroke-width="1.5"/>
+  <path d="M32,18 Q26,10 18,10" fill="none" stroke="#b48c50" stroke-width="1.2"/>
+  <path d="M18,32 Q10,26 10,18" fill="none" stroke="#b48c50" stroke-width="1.2"/>
+  <!-- Acanthus scroll along top -->
+  <path d="M38,4 C42,12 48,10 46,4 C44,-2 38,0 38,4Z" fill="rgba(200,150,58,0.15)" stroke="#b48c50" stroke-width="1.3"/>
+  <path d="M54,3 C56,10 62,12 64,6 C66,0 58,-2 54,3Z" fill="rgba(200,150,58,0.12)" stroke="#a07a2e" stroke-width="1.1"/>
+  <path d="M72,3 C74,8 78,8 78,4" fill="none" stroke="#a07a2e" stroke-width="1"/>
+  <path d="M86,3 Q88,6 86,9" fill="none" stroke="rgba(180,140,50,0.4)" stroke-width="0.8"/>
+  <!-- Acanthus scroll along left -->
+  <path d="M4,38 C12,42 10,48 4,46 C-2,44 0,38 4,38Z" fill="rgba(200,150,58,0.15)" stroke="#b48c50" stroke-width="1.3"/>
+  <path d="M3,54 C10,56 12,62 6,64 C0,66 -2,58 3,54Z" fill="rgba(200,150,58,0.12)" stroke="#a07a2e" stroke-width="1.1"/>
+  <path d="M3,72 C8,74 8,78 4,78" fill="none" stroke="#a07a2e" stroke-width="1"/>
+  <path d="M3,86 Q6,88 9,86" fill="none" stroke="rgba(180,140,50,0.4)" stroke-width="0.8"/>
+  <!-- Bead dots -->
+  <circle cx="46" cy="5" r="1.8" fill="rgba(200,150,58,0.35)"/><circle cx="60" cy="4" r="1.4" fill="rgba(200,150,58,0.3)"/>
+  <circle cx="5" cy="46" r="1.8" fill="rgba(200,150,58,0.35)"/><circle cx="4" cy="60" r="1.4" fill="rgba(200,150,58,0.3)"/>
+</svg></div>
+<div class="frame-corner tr"><svg viewBox="0 0 160 160">
+  <path d="M60,2 L146,2 Q158,2 158,14 L158,100" fill="none" stroke="#c8963a" stroke-width="6"/>
+  <path d="M64,6 L144,6 Q154,6 154,16 L154,96" fill="none" stroke="#a07a2e" stroke-width="3"/>
+  <path d="M128,2 L158,2 L158,32 L152,32 L152,8 L128,8Z" fill="rgba(200,150,58,0.3)" stroke="#c8963a" stroke-width="2"/>
+  <circle cx="142" cy="18" r="14" fill="rgba(160,122,46,0.25)" stroke="#d4a843" stroke-width="3"/>
+  <circle cx="142" cy="18" r="8" fill="rgba(200,150,58,0.2)" stroke="#c8963a" stroke-width="1.5"/>
+  <circle cx="142" cy="18" r="3.5" fill="rgba(255,210,80,0.5)" stroke="#d4a843" stroke-width="1"/>
+  <circle cx="142" cy="18" r="1.2" fill="rgba(255,235,150,0.8)"/>
+  <path d="M142,4 Q150,10 150,18" fill="none" stroke="#c8963a" stroke-width="1.5"/>
+  <path d="M142,4 Q134,10 134,18" fill="none" stroke="#c8963a" stroke-width="1.5"/>
+  <path d="M156,18 Q150,10 142,10" fill="none" stroke="#b48c50" stroke-width="1.2"/>
+  <path d="M142,32 Q134,26 134,18" fill="none" stroke="#b48c50" stroke-width="1.2"/>
+  <path d="M122,4 C118,12 112,10 114,4 C116,-2 122,0 122,4Z" fill="rgba(200,150,58,0.15)" stroke="#b48c50" stroke-width="1.3"/>
+  <path d="M106,3 C104,10 98,12 96,6 C94,0 102,-2 106,3Z" fill="rgba(200,150,58,0.12)" stroke="#a07a2e" stroke-width="1.1"/>
+  <path d="M88,3 C86,8 82,8 82,4" fill="none" stroke="#a07a2e" stroke-width="1"/>
+  <path d="M74,3 Q72,6 74,9" fill="none" stroke="rgba(180,140,50,0.4)" stroke-width="0.8"/>
+  <path d="M156,38 C148,42 150,48 156,46 C162,44 160,38 156,38Z" fill="rgba(200,150,58,0.15)" stroke="#b48c50" stroke-width="1.3"/>
+  <path d="M157,54 C150,56 148,62 154,64 C160,66 162,58 157,54Z" fill="rgba(200,150,58,0.12)" stroke="#a07a2e" stroke-width="1.1"/>
+  <path d="M157,72 C152,74 152,78 156,78" fill="none" stroke="#a07a2e" stroke-width="1"/>
+  <circle cx="114" cy="5" r="1.8" fill="rgba(200,150,58,0.35)"/><circle cx="100" cy="4" r="1.4" fill="rgba(200,150,58,0.3)"/>
+  <circle cx="155" cy="46" r="1.8" fill="rgba(200,150,58,0.35)"/><circle cx="156" cy="60" r="1.4" fill="rgba(200,150,58,0.3)"/>
+</svg></div>
+<div class="frame-corner bl"><svg viewBox="0 0 160 160">
+  <path d="M2,60 L2,146 Q2,158 14,158 L100,158" fill="none" stroke="#c8963a" stroke-width="6"/>
+  <path d="M6,64 L6,144 Q6,154 16,154 L96,154" fill="none" stroke="#a07a2e" stroke-width="3"/>
+  <path d="M2,128 L2,158 L32,158 L32,152 L8,152 L8,128Z" fill="rgba(200,150,58,0.3)" stroke="#c8963a" stroke-width="2"/>
+  <circle cx="18" cy="142" r="14" fill="rgba(160,122,46,0.25)" stroke="#d4a843" stroke-width="3"/>
+  <circle cx="18" cy="142" r="8" fill="rgba(200,150,58,0.2)" stroke="#c8963a" stroke-width="1.5"/>
+  <circle cx="18" cy="142" r="3.5" fill="rgba(255,210,80,0.5)" stroke="#d4a843" stroke-width="1"/>
+  <circle cx="18" cy="142" r="1.2" fill="rgba(255,235,150,0.8)"/>
+  <path d="M18,128 Q26,134 26,142" fill="none" stroke="#c8963a" stroke-width="1.5"/>
+  <path d="M18,128 Q10,134 10,142" fill="none" stroke="#c8963a" stroke-width="1.5"/>
+  <path d="M32,142 Q26,134 18,134" fill="none" stroke="#b48c50" stroke-width="1.2"/>
+  <path d="M18,156 Q10,150 10,142" fill="none" stroke="#b48c50" stroke-width="1.2"/>
+  <path d="M4,122 C12,118 10,112 4,114 C-2,116 0,122 4,122Z" fill="rgba(200,150,58,0.15)" stroke="#b48c50" stroke-width="1.3"/>
+  <path d="M3,106 C10,104 12,98 6,96 C0,94 -2,102 3,106Z" fill="rgba(200,150,58,0.12)" stroke="#a07a2e" stroke-width="1.1"/>
+  <path d="M3,88 C8,86 8,82 4,82" fill="none" stroke="#a07a2e" stroke-width="1"/>
+  <path d="M38,156 C42,148 48,150 46,156 C44,162 38,160 38,156Z" fill="rgba(200,150,58,0.15)" stroke="#b48c50" stroke-width="1.3"/>
+  <path d="M54,157 C56,150 62,148 64,154 C66,160 58,162 54,157Z" fill="rgba(200,150,58,0.12)" stroke="#a07a2e" stroke-width="1.1"/>
+  <path d="M72,157 C74,152 78,152 78,156" fill="none" stroke="#a07a2e" stroke-width="1"/>
+  <circle cx="5" cy="114" r="1.8" fill="rgba(200,150,58,0.35)"/><circle cx="4" cy="100" r="1.4" fill="rgba(200,150,58,0.3)"/>
+  <circle cx="46" cy="155" r="1.8" fill="rgba(200,150,58,0.35)"/><circle cx="60" cy="156" r="1.4" fill="rgba(200,150,58,0.3)"/>
+</svg></div>
+<div class="frame-corner br"><svg viewBox="0 0 160 160">
+  <path d="M60,158 L146,158 Q158,158 158,146 L158,60" fill="none" stroke="#c8963a" stroke-width="6"/>
+  <path d="M64,154 L144,154 Q154,154 154,144 L154,64" fill="none" stroke="#a07a2e" stroke-width="3"/>
+  <path d="M128,158 L158,158 L158,128 L152,128 L152,152 L128,152Z" fill="rgba(200,150,58,0.3)" stroke="#c8963a" stroke-width="2"/>
+  <circle cx="142" cy="142" r="14" fill="rgba(160,122,46,0.25)" stroke="#d4a843" stroke-width="3"/>
+  <circle cx="142" cy="142" r="8" fill="rgba(200,150,58,0.2)" stroke="#c8963a" stroke-width="1.5"/>
+  <circle cx="142" cy="142" r="3.5" fill="rgba(255,210,80,0.5)" stroke="#d4a843" stroke-width="1"/>
+  <circle cx="142" cy="142" r="1.2" fill="rgba(255,235,150,0.8)"/>
+  <path d="M142,128 Q150,134 150,142" fill="none" stroke="#c8963a" stroke-width="1.5"/>
+  <path d="M142,128 Q134,134 134,142" fill="none" stroke="#c8963a" stroke-width="1.5"/>
+  <path d="M156,142 Q150,134 142,134" fill="none" stroke="#b48c50" stroke-width="1.2"/>
+  <path d="M142,156 Q134,150 134,142" fill="none" stroke="#b48c50" stroke-width="1.2"/>
+  <path d="M156,122 C148,118 150,112 156,114 C162,116 160,122 156,122Z" fill="rgba(200,150,58,0.15)" stroke="#b48c50" stroke-width="1.3"/>
+  <path d="M157,106 C150,104 148,98 154,96 C160,94 162,102 157,106Z" fill="rgba(200,150,58,0.12)" stroke="#a07a2e" stroke-width="1.1"/>
+  <path d="M157,88 C152,86 152,82 156,82" fill="none" stroke="#a07a2e" stroke-width="1"/>
+  <path d="M122,156 C118,148 112,150 114,156 C116,162 122,160 122,156Z" fill="rgba(200,150,58,0.15)" stroke="#b48c50" stroke-width="1.3"/>
+  <path d="M106,157 C104,150 98,148 96,154 C94,160 102,162 106,157Z" fill="rgba(200,150,58,0.12)" stroke="#a07a2e" stroke-width="1.1"/>
+  <path d="M88,157 C86,152 82,152 82,156" fill="none" stroke="#a07a2e" stroke-width="1"/>
+  <circle cx="155" cy="114" r="1.8" fill="rgba(200,150,58,0.35)"/><circle cx="156" cy="100" r="1.4" fill="rgba(200,150,58,0.3)"/>
+  <circle cx="114" cy="155" r="1.8" fill="rgba(200,150,58,0.35)"/><circle cx="100" cy="156" r="1.4" fill="rgba(200,150,58,0.3)"/>
+</svg></div>
+<div id="cursorSpotlight"></div>
+<div class="museum-bg"></div>
+<div class="museum-decor">
+  <div class="bg-arch"></div>
+  <div class="bg-frieze"></div>
+  <div class="bg-baseboard"></div>
+  <!-- Oval portrait frame — left wall -->
+  <div class="bg-painting p1 oval">
+    <svg viewBox="0 0 60 80" class="painting-art"><defs><clipPath id="ov1"><ellipse cx="30" cy="40" rx="26" ry="36"/></clipPath></defs><ellipse cx="30" cy="40" rx="26" ry="36" fill="rgba(8,14,28,0.9)" stroke="rgba(180,140,50,0.4)" stroke-width="2"/><g clip-path="url(#ov1)"><rect x="0" y="50" width="60" height="30" fill="rgba(20,40,30,0.6)"/><circle cx="42" cy="18" r="8" fill="rgba(255,210,100,0.15)"/><path d="M10,55 Q20,40 30,55 Q40,45 50,55 L50,80 L10,80Z" fill="rgba(30,55,40,0.5)"/><circle cx="30" cy="32" r="10" fill="rgba(180,150,100,0.2)"/><path d="M30,22 L30,18 M25,42 L30,44 L35,42" stroke="rgba(180,140,50,0.2)" stroke-width="0.5" fill="none"/></g></svg>
+  </div>
+  <!-- Square landscape — right wall -->
+  <div class="bg-painting p2 square">
+    <svg viewBox="0 0 70 70" class="painting-art"><rect x="2" y="2" width="66" height="66" rx="1" fill="rgba(8,14,28,0.9)" stroke="rgba(180,140,50,0.35)" stroke-width="1.5"/><rect x="0" y="42" width="70" height="28" fill="rgba(15,30,20,0.5)"/><circle cx="55" cy="15" r="7" fill="rgba(255,200,80,0.12)"/><circle cx="55" cy="15" r="4" fill="rgba(255,220,120,0.08)"/><path d="M5,50 Q15,35 25,48 Q35,38 45,50 Q55,42 65,50 L65,70 L5,70Z" fill="rgba(25,50,35,0.5)"/><path d="M20,48 L22,38 L24,48" stroke="rgba(40,70,50,0.4)" stroke-width="1" fill="rgba(30,60,40,0.3)"/><path d="M42,47 L45,34 L48,47" stroke="rgba(40,70,50,0.4)" stroke-width="1" fill="rgba(30,60,40,0.3)"/><path d="M10,65 Q35,58 60,65" stroke="rgba(80,120,160,0.15)" stroke-width="0.5" fill="none"/></svg>
+  </div>
+  <!-- Tall rectangle — left wall lower -->
+  <div class="bg-painting p3 tall">
+    <svg viewBox="0 0 50 80" class="painting-art"><rect x="1" y="1" width="48" height="78" fill="rgba(8,14,28,0.9)" stroke="rgba(180,140,50,0.35)" stroke-width="1.5"/><path d="M25,15 L25,65" stroke="rgba(180,140,50,0.1)" stroke-width="0.5"/><rect x="10" y="20" width="30" height="40" fill="none" stroke="rgba(180,140,50,0.12)" stroke-width="0.5"/><circle cx="25" cy="35" r="12" fill="rgba(20,35,60,0.5)" stroke="rgba(100,140,200,0.15)" stroke-width="0.5"/><circle cx="25" cy="35" r="6" fill="rgba(30,50,80,0.4)"/><circle cx="25" cy="35" r="2" fill="rgba(180,140,50,0.15)"/><path d="M13,62 L25,50 L37,62" stroke="rgba(180,140,50,0.12)" stroke-width="0.5" fill="none"/></svg>
+  </div>
+  <!-- Wide landscape — right wall lower -->
+  <div class="bg-painting p4 wide">
+    <svg viewBox="0 0 90 55" class="painting-art"><rect x="1" y="1" width="88" height="53" fill="rgba(6,12,24,0.9)" stroke="rgba(180,140,50,0.35)" stroke-width="1.5"/><rect x="0" y="32" width="90" height="23" fill="rgba(10,22,15,0.5)"/><path d="M0,38 Q22,25 45,38 Q67,28 90,38 L90,55 L0,55Z" fill="rgba(20,40,30,0.4)"/><circle cx="72" cy="14" r="6" fill="rgba(255,200,80,0.1)"/><path d="M15,36 L18,24 L21,36" fill="rgba(30,55,40,0.4)" stroke="rgba(40,70,50,0.3)" stroke-width="0.5"/><path d="M55,35 L60,20 L65,35" fill="rgba(30,55,40,0.4)" stroke="rgba(40,70,50,0.3)" stroke-width="0.5"/><path d="M35,34 L38,28 L41,34" fill="rgba(25,45,35,0.3)" stroke="rgba(40,70,50,0.2)" stroke-width="0.5"/></svg>
+  </div>
+  <!-- Small oval — upper right -->
+  <div class="bg-painting p5 oval-sm">
+    <svg viewBox="0 0 50 60" class="painting-art"><defs><clipPath id="ov2"><ellipse cx="25" cy="30" rx="22" ry="27"/></clipPath></defs><ellipse cx="25" cy="30" rx="22" ry="27" fill="rgba(8,14,28,0.9)" stroke="rgba(180,140,50,0.4)" stroke-width="2"/><g clip-path="url(#ov2)"><circle cx="25" cy="22" r="8" fill="rgba(180,150,110,0.15)"/><path d="M25,30 Q25,35 20,42 L30,42 Q25,35 25,30" fill="rgba(140,110,80,0.12)"/><rect x="0" y="42" width="50" height="18" fill="rgba(20,35,25,0.4)"/></g></svg>
+  </div>
+  <!-- Ornate small square — left mid -->
+  <div class="bg-painting p6 ornate">
+    <svg viewBox="0 0 55 55" class="painting-art"><rect x="2" y="2" width="51" height="51" fill="rgba(8,14,28,0.9)" stroke="rgba(180,140,50,0.4)" stroke-width="2"/><rect x="6" y="6" width="43" height="43" fill="none" stroke="rgba(180,140,50,0.15)" stroke-width="0.5"/><path d="M2,2 L12,12 M53,2 L43,12 M2,53 L12,43 M53,53 L43,43" stroke="rgba(180,140,50,0.2)" stroke-width="0.5"/><circle cx="27.5" cy="27.5" r="15" fill="none" stroke="rgba(100,140,200,0.12)" stroke-width="0.5"/><path d="M20,20 L27.5,12 L35,20 L27.5,28Z" fill="rgba(20,40,70,0.3)" stroke="rgba(100,140,200,0.15)" stroke-width="0.5"/><path d="M20,35 L27.5,27 L35,35 L27.5,43Z" fill="rgba(30,20,40,0.3)" stroke="rgba(140,100,180,0.12)" stroke-width="0.5"/></svg>
+  </div>
+</div>
+<div id="dimOverlay"></div>
+
+<!-- ═══ CONSENT ═══ -->
+<div class="consent-modal" id="consentModal">
+  <div class="modal-title">Visitor Consent</div>
+  <p class="modal-text">Your session data stays entirely on this device. No personal information is stored, transmitted, or shared with any third party. By proceeding, you consent to a <strong>simulated driving assessment</strong> for educational purposes.</p>
+  <button class="modal-btn" onclick="acceptConsent()">I Understand — Enter</button>
+  <p class="consent-privacy">Privacy-first design · No cookies · No tracking · Session-only data</p>
+</div>
+
+<!-- ═══ LOBBY ═══ -->
+<div id="lobby" class="screen active">
+
+  <!-- NocTurn Title -->
+  <div class="lobby-title">NocTurn</div>
+  <div class="lobby-subtitle">A Living Museum of Driving Risk</div>
+
+  <!-- Grand Museum Facade -->
+  <div class="facade" id="facade">
+    <!-- Pediment / Triangular roof -->
+    <div class="facade-pediment">
+      <svg class="pediment-svg" viewBox="0 0 600 80" preserveAspectRatio="none">
+        <path d="M0,80 L300,4 L600,80 Z" fill="rgba(12,18,32,0.95)" stroke="rgba(212,168,67,0.6)" stroke-width="2.5"/>
+        <path d="M40,80 L300,18 L560,80 Z" fill="none" stroke="rgba(212,168,67,0.2)" stroke-width="1"/>
+        <circle cx="300" cy="38" r="12" fill="rgba(180,140,50,0.08)" stroke="rgba(212,168,67,0.4)" stroke-width="1.5"/>
+        <circle cx="300" cy="38" r="5" fill="rgba(255,200,80,0.3)"/>
+        <path d="M280,38 Q290,28 300,32 Q310,28 320,38" fill="none" stroke="rgba(212,168,67,0.25)" stroke-width="0.8"/>
+      </svg>
+    </div>
+    <!-- Entablature (decorative band) -->
+    <div class="facade-entablature">
+      <div class="entab-dentils"></div>
+      <div class="entab-band"><span>Est. MMXXV</span></div>
+      <div class="entab-dentils bottom"></div>
+    </div>
+    <!-- Colonnade -->
+    <div class="facade-colonnade">
+      <div class="f-column"><div class="f-col-cap"></div><div class="f-col-shaft"><div class="f-col-flute"></div><div class="f-col-flute"></div><div class="f-col-flute"></div></div><div class="f-col-base"></div></div>
+      <div class="f-column"><div class="f-col-cap"></div><div class="f-col-shaft"><div class="f-col-flute"></div><div class="f-col-flute"></div><div class="f-col-flute"></div></div><div class="f-col-base"></div></div>
+      <!-- CENTER: The Doors -->
+      <div class="facade-door-section">
+        <div class="facade-door-arch"></div>
+        <div class="entrance-doors" id="entranceDoors">
+          <div class="door-inner-glow"></div>
+          <div class="door door-left" id="doorLeft">
+            <div class="door-panel"></div>
+            <div class="door-panel"></div>
+            <div class="door-ring left"></div>
+          </div>
+          <div class="door door-right" id="doorRight">
+            <div class="door-panel"></div>
+            <div class="door-panel"></div>
+            <div class="door-ring right"></div>
+          </div>
+          <div class="door-title" id="doorTitle"></div>
+        </div>
+        <div class="door-sub"></div>
+      </div>
+      <div class="f-column"><div class="f-col-cap"></div><div class="f-col-shaft"><div class="f-col-flute"></div><div class="f-col-flute"></div><div class="f-col-flute"></div></div><div class="f-col-base"></div></div>
+      <div class="f-column"><div class="f-col-cap"></div><div class="f-col-shaft"><div class="f-col-flute"></div><div class="f-col-flute"></div><div class="f-col-flute"></div></div><div class="f-col-base"></div></div>
+    </div>
+    <!-- Steps -->
+    <div class="facade-steps">
+      <div class="step s1"></div>
+      <div class="step s2"></div>
+      <div class="step s3"></div>
+    </div>
+  </div>
+
+  <!-- Input area below museum -->
+  <div class="lobby-input-area" id="lobbyInputArea">
+    <div class="sf-tag"><span class="sf-dot"></span>State Farm · Drive Safe & Save</div>
+    <div class="guest-register">
+      <label class="guest-label">Sign the Guest Register</label>
+      <input type="text" id="guestName" class="guest-input" placeholder="Your name" autocomplete="off" oninput="checkReturning()">
+      <div class="returning-banner" id="returningBanner" style="display:none"></div>
+    </div>
+    <button class="enter-btn" onclick="enterMuseum()">Enter The Museum</button>
+  </div>
+</div>
+
+<!-- ═══ PICK GUIDE ═══ -->
+<div id="pickGuide" class="screen">
+  <div class="guide-showcase">
+    <div class="guide-spotlight"></div>
+    <h2 class="guide-title">Choose Your Tour Guide</h2>
+    <div class="guide-counter" id="guideCounter">1 / 4</div>
+    <div class="guide-stage" id="guideStage"></div>
+    <div class="guide-controls">
+      <button class="guide-btn secondary" id="guidePrevBtn" onclick="cycleGuide(-1)" style="visibility:hidden">Previous</button>
+      <button class="guide-btn primary" id="guideChooseBtn" onclick="confirmGuide()">Choose This Guide</button>
+      <button class="guide-btn secondary" id="guideNextBtn" onclick="cycleGuide(1)">Next</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ QUIZ ═══ -->
+<div id="quiz" class="screen">
+  <nav class="quiz-nav"><span class="quiz-brand">NOCTURN</span><span class="quiz-step" id="qStepLabel">Question 1 of 7</span></nav>
+  <div class="prog-track"><div class="prog-fill" id="qProg" style="width:0%"></div></div>
+  <div class="quiz-body" id="quizBody"></div>
+  <div class="quiz-cracks" id="quizCracks"></div>
+  <div class="quiz-risk-meter" id="quizRiskMeter">
+    <div class="qrm-label">Risk Building</div>
+    <div class="qrm-bar"><div class="qrm-fill" id="quizRiskFill"></div></div>
+  </div>
+</div>
+
+<!-- Drive Intro -->
+<div class="drive-intro-modal" id="driveIntroModal">
+  <div class="modal-title">The Driving Chamber</div>
+  <p class="modal-text">Navigate a 30-second drive through the museum corridor using <strong>arrow keys</strong>. <strong>Dodge falling artifacts</strong>. <strong>Ignore notifications</strong>. <strong>Brake when prompted</strong>. The Curator records everything.</p>
+  <div class="wx-card" id="weatherCard" style="display:none"></div>
+  <button class="modal-btn" onclick="closeDriveIntro()">Begin The Drive</button>
+</div>
+
+<!-- Drive End -->
+<div class="drive-end-modal" id="driveEndModal">
+  <div class="de-icon"><svg viewBox="0 0 60 60" width="48" height="48"><circle cx="30" cy="30" r="26" fill="none" stroke="rgba(212,168,67,0.5)" stroke-width="1.5"/><path d="M20,30 L27,37 L40,22" fill="none" stroke="rgba(212,168,67,0.8)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <div class="modal-title">The Drive Has Concluded</div>
+  <p class="modal-text">Your driving record has been archived. The Curator awaits you in the museum to review your artifacts.</p>
+  <button class="modal-btn" onclick="proceedToMuseum()">Enter The Museum</button>
+</div>
+
+<!-- ═══ DRIVE SIM ═══ -->
+<div id="driveSim" class="screen">
+  <nav class="sim-header">
+    <span class="sim-brand">NOCTURN</span>
+    <span class="sim-timer-display" id="simTimerDisplay">0:30</span>
+  </nav>
+  <div class="sim-body">
+    <div class="sim-panel">
+      <div class="voice-bar"><span class="voice-dot"></span><span class="voice-lbl">Curator</span></div>
+      <div class="sp-card"><div class="sp-label">Live Voice</div><div class="voice-live" id="voiceLiveText">Preparing...</div></div>
+      <div class="sp-card"><div class="sp-label">Speed</div><div class="sp-val" id="simSpeedVal">0 mph</div></div>
+      <div class="sp-card"><div class="sp-label">Event Log</div><div class="log-wrap" id="simLog"><div class="log-item">Awaiting...</div></div></div>
+    </div>
+    <div class="phone-mockup">
+      <div class="phone-notch"></div>
+      <div class="phone-bar"></div>
+      <div class="phone-screen">
+        <canvas id="roadCanvas"></canvas>
+        <div class="phone-notif" id="phoneNotif" onclick="tapNotif()">
+          <div class="n-header"><span class="n-letter" id="nLetter" style="background:linear-gradient(135deg,#833AB4,#FD1D1D,#F77737)">&#x1F4F7;</span><span class="n-app" id="nApp">INSTAGRAM</span><span class="n-time">now</span></div>
+          <div class="n-title" id="nTitle">New Message</div>
+          <div class="n-body" id="nBody">Hey, are you free?</div>
+        </div>
+        <div class="brake-alert" id="brakeAlert" onclick="tapBrake()">
+          <svg class="brake-icon" viewBox="0 0 24 24" width="26" height="26"><circle cx="12" cy="12" r="10" fill="none" stroke="#fff" stroke-width="2"/><rect x="10" y="5" width="4" height="10" rx="1" fill="#fff"/><circle cx="12" cy="18" r="1.5" fill="#fff"/></svg>
+          <span class="brake-text">BRAKE</span>
+        </div>
+        <div class="crash-detect" id="crashDetect">
+          <div class="cd-icon"><svg viewBox="0 0 36 36" width="36" height="36"><circle cx="18" cy="18" r="16" fill="none" stroke="#ff4444" stroke-width="2"/><path d="M18,9 L18,21" stroke="#ff4444" stroke-width="2.5" stroke-linecap="round"/><circle cx="18" cy="26" r="2" fill="#ff4444"/></svg></div>
+          <div class="cd-title">CRASH DETECTED</div>
+          <div class="cd-sub">State Farm Roadside Assistance activated</div>
+          <div class="cd-steps"><span>Locating...</span><span>Contacting 911...</span></div>
+        </div>
+        <!-- Roadside Assistance Prompt -->
+        <div class="roadside-prompt" id="roadsidePrompt">
+          <div class="rp-inner">
+            <div class="rp-icon"><svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="22" fill="none" stroke="#e8b84a" stroke-width="2"/><path d="M16,18 Q16,12 24,12 Q32,12 32,18 L32,22 Q32,24 30,24 L28,24 L28,20 Q28,16 24,16 Q20,16 20,20 L20,24 L18,24 Q16,24 16,22 Z" fill="#e8b84a" opacity="0.8"/><circle cx="24" cy="32" r="3" fill="#e8b84a"/></svg></div>
+            <div class="rp-title">COLLISION DETECTED</div>
+            <div class="rp-sub">Activate State Farm Roadside Assistance?</div>
+            <div class="rp-timer" id="rpTimer">3</div>
+            <button class="rp-btn" id="rpBtn" onclick="acceptRoadside()">CALL FOR HELP</button>
+            <div class="rp-skip">Auto-resuming in <span id="rpCountdown">3</span>s...</div>
+          </div>
+        </div>
+        <!-- 911 Connecting Screen -->
+        <div class="roadside-connect" id="roadsideConnect">
+          <div class="rc-inner">
+            <div class="rc-ring"></div>
+            <div class="rc-icon"><svg viewBox="0 0 48 48" width="56" height="56"><circle cx="24" cy="24" r="22" fill="rgba(232,184,74,0.1)" stroke="#e8b84a" stroke-width="2"/><path d="M15,18 C15,13 19,10 24,10 C29,10 33,13 33,18 L33,20 C33,21 32,22 31,22 L29,22 L29,18 C29,15 27,13 24,13 C21,13 19,15 19,18 L19,22 L17,22 C16,22 15,21 15,20 Z" fill="#e8b84a"/><rect x="21" y="26" width="6" height="8" rx="1" fill="#e8b84a"/><circle cx="24" cy="38" r="2" fill="#e8b84a" opacity="0.6"/></svg></div>
+            <div class="rc-title">CONNECTING...</div>
+            <div class="rc-sub">State Farm Roadside Assistance</div>
+            <div class="rc-status" id="rcStatus">Dialing 911...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sim-panel">
+      <div class="sp-card">
+        <div class="sp-label">Risk Index</div>
+        <div class="sim-risk-wrap" style="position:relative;width:120px;height:120px;margin:6px auto">
+          <svg viewBox="0 0 120 120" width="120" height="120">
+            <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(212,168,67,0.06)" stroke-width="8"/>
+            <circle cx="60" cy="60" r="50" fill="none" stroke="#2a4a3a" stroke-width="8" stroke-dasharray="314" stroke-dashoffset="314" id="simRiskArc" stroke-linecap="round" style="transition:all 0.5s"/>
+          </svg>
+          <div class="sim-risk-num"><span class="sim-risk-v" id="simRiskVal">0</span><span class="sim-risk-l">/ 100</span></div>
+        </div>
+      </div>
+      <div class="sp-card"><div class="sp-label">Distractions</div><div class="sp-val" id="simPhoneVal">0</div></div>
+      <div class="sp-card"><div class="sp-label">Hard Brakes</div><div class="sp-val" id="simBrakeVal">0</div></div>
+      <div class="sp-card"><div class="sp-label">Safe Actions</div><div class="sp-val good" id="simSafeVal">0</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PERSONAL MUSEUM ═══ -->
+<div id="museum" class="screen">
+  <nav class="museum-nav"><span class="museum-nav-brand">NOCTURN</span></nav>
+  <div class="museum-header"><h2 id="museumTitle">Your Reckoning</h2><p>The relics of your journey through the corridor</p></div>
+  <div id="tourSection">
+    <div class="tour-wrap">
+      <div class="tour-left">
+        <div class="spotlight-source"></div>
+        <div class="spotlight-cone"></div>
+        <div class="spotlight-glow"></div>
+        <div class="art-image-glow"></div>
+        <div id="artifactSVG"></div>
+        <div class="art-pedestal"><div class="art-pedestal-top"></div><div class="art-pedestal-body"></div></div>
+      </div>
+      <div class="tour-right">
+        <div class="ex-num" id="exNum">I</div>
+        <h3 class="ex-name" id="exName">Artifact</h3>
+        <p class="ex-desc" id="exDesc">Description</p>
+        <p class="ex-stat" id="exStat"></p>
+        <div class="ex-verdict" id="exVerdict">Signal</div>
+        <div class="tour-nav">
+          <button class="tour-nav-btn" id="prevArt" onclick="prevArt()">Previous</button>
+          <span class="art-counter" id="artCounter">1 of 6</span>
+          <button class="tour-nav-btn" id="nextArt" onclick="nextArt()">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="summarySection" style="display:none">
+    <div class="summary-wrap" id="summaryContent"></div>
+    <div style="text-align:center;padding:0 0 4rem"><button class="action-btn primary" onclick="goToMuseumTour()">Enter The Museum</button></div>
+  </div>
+</div>
+
+<script src="nocturn_app.js"></script>
+</body>
+</html>
